@@ -1,0 +1,28 @@
+Functional Requirements
+
+ The app should allow users to record expenses with details like amount, date, category, payment method, and optional description.
+
+ Users can set, modify, and track budgets for different expense categories.
+
+ The app should offer various categories for expense classification. 
+
+ The app should facilitate receipt capture and data extraction for easier expense tracking. 
+
+ The app should allow users to set budgets for different categories.
+
+ The app should provide reports on spending history with visualization options.
+
+ Users receive alerts when they approach budget limits or overspend.
+
+
+Non-Functional Requirements
+
+The app should be user-friendly and intuitive with a clean and easy-to-navigate interface.
+
+The app should be responsive and work seamlessly on different mobile devices and screen sizes.
+
+The app should be performant and load data quickly without lags.
+
+The app should be available offline so users can track expenses without an internet connection (data may sync later)
+
+The app should be secure and protect user privacy with data encryption and secure login methods.
