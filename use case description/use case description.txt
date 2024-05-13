@@ -1,0 +1,54 @@
+use case description
+
+1-
+
+Name: Login 
+
+Brief Description: the user can log into the application by providing valid credentials.
+
+Actors: user
+
+Trigger : the user click the login button
+
+pre-condition : 
+user was not login
+
+Main success Scenario :
+1-user click on the login button
+2-user enter his credential
+3-system check user details
+4-the user is logged in 
+5-system redirect the user to the dashboard 
+
+post-condition: the user is logged in 
+
+extension:3a If the user's password is invalid 
+ 
+3a1 The system informs the user that their password is invalid.
+     The user is prompted to set a new password.
+     The user sets a new password.
+     The system confirms the password change and grants access.
+
+
+2-
+
+Name : view Daily transaction
+
+Brief Description: the user display all the daily transaction in the application 
+
+Actior: user 
+
+Trigger: the user navigates to the daily transaction page in the application 
+
+pre-condition : the student is logged in 
+
+
+Main success Scenario :
+1- the user navigates to the daily transaction page in the application.
+2- the system queries the list of Daily transaction which are avaliable.
+3- the system displays the list of Daily transaction for the user 
+
+post-condition: the list of daily transaction is displayed 
+
+extension: 2a the system has no avaliable daily transactions
+2a1 a massege is shown to the user indiacating that there are currently no available daily transactions  
