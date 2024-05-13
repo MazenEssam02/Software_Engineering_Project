@@ -35,7 +35,7 @@ Name : view Daily transaction
 
 Brief Description: the user display all the daily transaction in the application 
 
-Actior: user 
+Actor: user 
 
 Trigger: the user navigates to the daily transaction page in the application 
 
