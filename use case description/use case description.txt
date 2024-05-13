@@ -10,8 +10,7 @@ Actors: user
 
 Trigger : the user click the login button
 
-pre-condition : 
-user was not login
+pre-condition : user was not login
 
 Main success Scenario :
 1-user click on the login button
@@ -41,7 +40,6 @@ Actior: user
 Trigger: the user navigates to the daily transaction page in the application 
 
 pre-condition : the student is logged in 
-
 
 Main success Scenario :
 1- the user navigates to the daily transaction page in the application.
