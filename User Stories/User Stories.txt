@@ -3,6 +3,8 @@ As a user, I want to log in to my account using my username or email address and
 
 As a user, I want to recover my account password if I forget it
 
+As a user, I want the app to remember my login credentials so I don't have to enter them every time
+
 As a user, I want to add a new expense with the amount, date, and a short description so I can track my spending.
 
 As a user, I want to categorize my expenses (e.g., groceries, rent, entertainment) to understand my spending habits better.
@@ -23,21 +25,15 @@ As a user, I want to add recurring expenses (e.g., monthly bills) for automatic 
 
 As a user, I want to receive notifications when I am approaching or exceeding a budget limit.
 
-As a user, I want to set financial goals (e.g., saving for a vacation) and track my progress.
-
 As a user, I want to add notes to specific transactions for additional context.
 
 As a user, I want to export my expense data to a spreadsheet or other format for further analysis.
 
 As a user, I want the app to be secure and protect my financial data with encryption and authentication.
 
-As a business owner, I want to import bank statements directly into the app to avoid manual data entry.
-
 As a parent, I want to receive notifications when my child exceeds their allocated pocket money budget.
 
 As a student, I want to attach images of receipts to transactions for easy reference.
-
-As a retiree, I want to generate expense reports for tax purposes.
 
 As a user concerned about privacy, I want the app to encrypt my financial data to ensure security.
 
