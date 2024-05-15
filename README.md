@@ -1,70 +1,32 @@
 # Software_Engineering_Project
-# Expense Tracker Apps Study
-Study on existing apps that help users to track their expenses, categorize transactions, set budgets, generate reports.
 
-## 1. Mint
-**Key Features:**
-- **Account Aggregation:** Connects to various financial institutions for a comprehensive financial overview.
-- **Budgeting Tools:** Enables budget creation and spending tracking with transaction categorization.
-- **Bill Pay Reminders:** Offers reminders for upcoming bills and alerts for low balances and unusual activity.
-- **Credit Score Tracking:** Provides a free credit score and monitors credit health over time.
-- **Financial Goals:** Helps set and track financial goals.
-- **Security:** Employs bank-level security measures.
+## Onboarding and Account Creation
+- **Onboarding Screens:** Intuitive onboarding process guiding users through the app's features.
+- **Create Account Page:** Simple account creation with necessary user information fields.
 
-**Client Opinions:**
-- Requires more formal income and expense reports.
-- Does not allow setting up future budgets.
-- Limited mobile functionality for filtering by date range.
-- Lacks a dark mode option.
+## Account Operations
+- **Choose and Crop Picture:** Users can select a picture from the gallery and crop it to fit their preferences.
+- **Login with Credentials:** Secure login process, with error handling for incorrect credentials.
+- **Account Creation:** Streamlined creation of a new user account.
+- **Forgot Password:** Forgot password functionality with email verification (tested with a placeholder email).
 
-## 2. YNAB (You Need a Budget)
-**Key Features:**
-- **Proactive Budgeting:** Encourages assigning money to categories before spending.
-- **Age of Money:** Tracks the circulation time of cash through the budget.
-- **Flexibility:** Allows easy transfer of money between categories.
-- **Goal Setting:** Facilitates setting specific savings goals.
-- **Mobile App:** Provides a user-friendly mobile app for budget management.
+## Financial Reporting
+- **Daily Expenses Report:** Expenses are grouped by day with a sum total displayed.
+- **Category-wise Expenses:** Pie chart visualization of daily expenses grouped by category.
+- **Budget Tracking:** Display of daily budget with expenses shown as a ratio.
 
-**Client Opinions:**
-- Not free and considered expensive.
-- Only supports the zero-based budgeting method.
-- Focuses on planning where money will go, unlike Mint.
+## Expense Management
+- **Expense Entries:** Entry of expenses for different days, categorized for easy tracking.
+- **Expense and Budget Creation:** Interface for creating expenses and setting budgets (animations not shown).
 
-## 3. Personal Capital
-**Free Features:**
-- **Financial Dashboard:** Aggregates all financial accounts for a single view of net worth, investment performance, and cash flow.
-- **Budgeting and Cash Flow Tracking:** Offers tools for transaction categorization and spending analysis.
-- **Retirement Planning:** Provides tools to estimate future retirement income and track retirement goals.
+## User Profile and Notifications
+- **Profile Page:** User information and name displayed on the profile page.
+- **Notifications:** Notifications generated through Firebase Cloud Messaging.
 
-**Paid Wealth Management Services:**
-- Offers personalized financial advice for a fee.
+## Additional Features
+- **Currency Symbol:** Automatically chosen based on the device's locale (e.g., Pound currency for English UK).
+- **Animations and Features:** Some animations and features are not visually represented here.
 
-**Client Opinions:**
-- Some features do not function correctly.
-
-## 4. QuickBooks
-**Key Features:**
-- **Income & Expense Tracking:** Maintains accurate financial records with transaction recording and categorization.
-- **Invoicing & Estimates:** Creates and tracks invoices and estimates.
-- **Bill & Payment Management:** Manages bills and automates payments.
-- **Financial Reporting:** Generates financial reports for business health analysis.
-- **Inventory Management:** (In some versions) Manages inventory levels and costs.
-- **Payroll:** (In some versions) Handles employee payroll and tax calculations.
-- **Mobile App:** Available for iOS and Android for on-the-go management.
-- **Multiple Versions:** Offers different versions for various business needs.
-
-**Client Opinion:**
-- Limited customization options.
-- Difficult to reach support.
-- Issues with pricing and occasional malfunctions.
-
-## Stakeholders and Users
-**Stakeholders:**
-- **App Developers/Company:** Interested in the app's success and profitability.
-- **Investors:** Seek returns on investment and growth of the app.
-
-**Users:**
-- **Individuals:** Use the app for personal finance management.
-- **Businesses:** (For business-oriented trackers) Manage business expenses and reports.
-
-Some stakeholders may also be users, such as small business owners developing apps for similar users.
+## Database and Security
+- **Firebase Database:** Firebase chosen for database needs to support online backups.
+- **Security Rules:** Firebase console configured to allow only authenticated users to read and write.
