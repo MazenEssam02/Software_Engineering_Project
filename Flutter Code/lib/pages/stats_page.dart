@@ -138,10 +138,13 @@ class _StatsPageState extends State<StatsPage> {
                                   ConnectionState.waiting ||
                               snapshot.hasError ||
                               snapshot.data == null) {
-                            print(snapshot.error);
+                            
                             return const CircularProgressIndicator();
                           }
                           final dailyExpenses = snapshot.data!;
+                          if(dailyExpenses.isEmpty){
+                            return Text("Empty Data. Please add.",style: TextStyle(fontSize: 18),);
+                          }
                           double totalPrice = 0;
                           for (Expense ex in dailyExpenses) {
                             totalPrice += ex.price;
