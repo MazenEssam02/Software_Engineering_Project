@@ -1,6 +1,19 @@
 # Expenso - The Ultimate Expense Tracker 💸
 <img src="./Screenshot/Readme.png">
 
+## Contributors
+
+- Sarah Sherif Mohamed 	    -   2000427
+- Tasneem Salama Abd-Elhamid	- 2000036
+- Alaa Mohsen Sayed 	        - 2000195
+- Fady Milad Garas   	        - 1900003
+- Mazen Essam Eldin           -  2001607
+- George Geham William	      -  2000073
+- Sara Ahmed Mostafa	        -  2000362
+- Andrew Ayman Samir       		- 2000003
+- Youssef saad gobran          - 2001440
+- Philopateer sameh rasmy		   - 2000955
+
 ## Onboarding and Account Creation
 - **Onboarding Screens:** Intuitive onboarding process guiding users through the app's features.
 - **Create Account Page:** Simple account creation with necessary user information fields.
