@@ -97,18 +97,21 @@ class _BudgetPageState extends State<BudgetPage> {
             height: 20,
           ),
           FutureBuilder<List<Budget>>(
-              future:FirestoreHelper.getBudgetByDateWithPriceRatio(
-                      context.watch<UserProvider>().user!.email, dateSelected),
+              future: FirestoreHelper.getBudgetByDateWithPriceRatio(
+                  context.watch<UserProvider>().user!.email, dateSelected),
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting ||
                     snapshot.hasError ||
                     snapshot.data == null) {
-                  // print(snapshot.error);
-                  // print(snapshot.data == null);
                   return CircularProgressIndicator();
                 }
                 final budgetList = snapshot.data!;
-
+                if (budgetList.isEmpty) {
+                  return Text(
+                    "Empty Data. Please add.",
+                    style: TextStyle(fontSize: 18),
+                  );
+                }
                 return Column(
                   children: [
                     Padding(
@@ -209,7 +212,8 @@ class _BudgetPageState extends State<BudgetPage> {
                                       ),
                                       Container(
                                         width: (size.width - 40) *
-                                            min(budgetList[index].getRatio(),1),
+                                            min(budgetList[index].getRatio(),
+                                                1),
                                         height: 4,
                                         decoration: BoxDecoration(
                                             borderRadius:
