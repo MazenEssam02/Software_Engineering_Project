@@ -1,4 +1,4 @@
-# Expenso - The ultimate Expense Tracker 💸
+# Expenso - The Ultimate Expense Tracker 💸
 <img src="./Screenshot/Readme.png">
 
 ## Onboarding and Account Creation
