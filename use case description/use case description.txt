@@ -6,7 +6,7 @@ Name: Login
 
 Brief Description: the user can log into the application by providing valid credentials.
 
-Actors: user
+Actors: user , system 
 
 Trigger : the user click the login button
 
@@ -39,7 +39,7 @@ Actor: user
 
 Trigger: the user navigates to the daily transaction page in the application 
 
-pre-condition : the student is logged in 
+pre-condition : the user is logged in 
 
 Main success Scenario :
 1- the user navigates to the daily transaction page in the application.
