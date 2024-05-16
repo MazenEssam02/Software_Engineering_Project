@@ -1,4 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:expenso/pages/Onboarding.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -66,6 +68,27 @@ class _ProfilePageState extends State<ProfilePage> {
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
                                     color: black),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(right: mainMargin),
+                                child: IconButton(
+                                  icon: Icon(
+                                    Icons.power_off,
+                                    color: primary,
+                                  ),
+                                  onPressed: () {
+                                    FirebaseAuth.instance
+                                        .signOut()
+                                        .then((value) {
+                                      Navigator.pushAndRemoveUntil(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  Onboarding()),
+                                          (route) => false);
+                                    });
+                                  },
+                                ),
                               )
                             ],
                           ),
@@ -163,7 +186,6 @@ class _ProfilePageState extends State<ProfilePage> {
                           const SizedBox(
                             height: 25,
                           ),
-                          
                         ],
                       ),
                     ),
